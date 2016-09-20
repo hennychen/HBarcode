@@ -318,5 +318,14 @@
 		<key>autostart</key>
 		<true/>
 	</dict>
+	<key>pluginbarscan</key>
+	<dict>
+		<key>class</key>
+		<string>PGPluginBarScan</string>
+		<key>global</key>
+		<true/>
+		<key>autostart</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

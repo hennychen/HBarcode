@@ -90,6 +90,7 @@
 		24BD5B021C994C2E00B05AA2 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BD5B011C994C2E00B05AA2 /* libstdc++.6.tbd */; };
 		24BD5B041C994C3800B05AA2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BD5B031C994C3800B05AA2 /* libiconv.tbd */; };
 		24BD5B061C994C4000B05AA2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BD5B051C994C4000B05AA2 /* libsqlite3.0.tbd */; };
+		5C914ACC1D911E180093D98C /* PGPluginBarScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C914ACB1D911E180093D98C /* PGPluginBarScan.m */; };
 		7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */; };
 		7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AC19FF89B1007C64F1 /* Security.framework */; };
 		8E158BEF1A8D24A600845BB6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E158BEE1A8D24A600845BB6 /* AssetsLibrary.framework */; };
@@ -240,6 +241,8 @@
 		24BD5B011C994C2E00B05AA2 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		24BD5B031C994C3800B05AA2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		24BD5B051C994C4000B05AA2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5C914ACA1D911E180093D98C /* PGPluginBarScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGPluginBarScan.h; path = "HBuilder-Integrate/PGPluginBarScan.h"; sourceTree = SOURCE_ROOT; };
+		5C914ACB1D911E180093D98C /* PGPluginBarScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGPluginBarScan.m; path = "HBuilder-Integrate/PGPluginBarScan.m"; sourceTree = SOURCE_ROOT; };
 		7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7ACF69AC19FF89B1007C64F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8E158BEE1A8D24A600845BB6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -576,6 +579,8 @@
 				244737331D08364300D0F08F /* WebAppController.m */,
 				244737341D08364300D0F08F /* WebViewController.h */,
 				244737351D08364300D0F08F /* WebViewController.m */,
+				5C914ACA1D911E180093D98C /* PGPluginBarScan.h */,
+				5C914ACB1D911E180093D98C /* PGPluginBarScan.m */,
 				8E23039A1B2AE6130050B03D /* PluginTest.h */,
 				8E23039B1B2AE6130050B03D /* PluginTest.m */,
 				8E175F5A1A37BE9C004A45F6 /* Main_iPad.storyboard */,
@@ -741,6 +746,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C914ACC1D911E180093D98C /* PGPluginBarScan.m in Sources */,
 				8E175F4D1A37B9C5004A45F6 /* AppDelegate.m in Sources */,
 				244737371D08364300D0F08F /* WebViewController.m in Sources */,
 				8E175F221A37B949004A45F6 /* main.m in Sources */,
