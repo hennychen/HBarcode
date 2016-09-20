@@ -13,13 +13,10 @@
         <script type="text/javascript">
             
         function pluginShow() {
-            plus.pluginbarscan.PluginBarScanFunction("Html5","Plus","AsyncFunction","MultiArgument!", function( result ) {alert( result[0]  + "_" + result[1]  + "_" + result[2]  + "_" + result[3] );},function(result){alert(result)});
+            plus.pluginbarscan.PluginBarScanFunction("Html5","Plus","AsyncFunction","MultiArgument!", function( result ) {alert( result[0]  );},function(result){alert(result)});
         }
         
-        function pluginGetString()
-        {
-            alert(plus.pluginbarscan.PluginBarScanFunction("Html5","Plus","SyncFunction","MultiArgument!"));
-        }
+        
         
         
             </script>
@@ -31,11 +28,8 @@
         </header>
         <div id="dcontent" class="dcontent">
             <br/>
-            <div class="button" onclick="pluginShow()">PluginBarScanFunction()</div>
-            <div class="button" onclick="pluginGetString()">PluginBarScanFunctionSync()</div>
-<!--            <div class="button" onclick="pluginGetStringArrayArgu()">PluginTestFunctionSyncArrayArgu()</div>-->
-<!--            <div class="button" onclick="PostNotification()">NJS发送消息到原生层</div>-->
-<!--            <div class="button" onclick="AuthenticateUser()">指纹解锁</div>-->
+            <div class="button" onclick="pluginShow()">调用扫码()</div>
+
             <br/>
         </div>
     </body>

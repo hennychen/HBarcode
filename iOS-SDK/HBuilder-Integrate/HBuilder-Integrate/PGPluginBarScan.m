@@ -11,6 +11,16 @@
 #import "H5WEEngineExport.h"
 #import "PDRToolSystemEx.h"
 
+#import "ZFScanViewController.h"
+@interface PGPluginBarScan()
+{
+    
+}
+
+@property(nonatomic, copy)NSString* cbId;
+
+@end
+
 @implementation PGPluginBarScan
 #pragma mark 这个方法在使用WebApp方式集成时触发，WebView集成方式不触发
 
@@ -50,34 +60,38 @@
 - (void)PluginBarScanFunction:(PGMethod*)commands
 {
     if ( commands ) {
+        
         // CallBackid 异步方法的回调id，H5+ 会根据回调ID通知JS层运行结果成功或者失败
-        NSString* cbId = [commands.arguments objectAtIndex:0];
-        
-        // 用户的参数会在第二个参数传回
-        NSString* pArgument1 = [commands.arguments objectAtIndex:1];
-        NSString* pArgument2 = [commands.arguments objectAtIndex:2];
-        NSString* pArgument3 = [commands.arguments objectAtIndex:3];
-        NSString* pArgument4 = [commands.arguments objectAtIndex:4];
-        
-    
-        
-        // 如果使用Array方式传递参数
-        NSArray* pResultString = [NSArray arrayWithObjects:pArgument1, pArgument2, pArgument3, pArgument4, nil];
-        
-        // 运行Native代码结果和预期相同，调用回调通知JS层运行成功并返回结果
-        // PDRCommandStatusOK 表示触发JS层成功回调方法
-        // PDRCommandStatusError 表示触发JS层错误回调方法
-        
-        // 如果方法需要持续触发页面回调，可以通过修改 PDRPluginResult 对象的keepCallback 属性值来表示当前是否可重复回调， true 表示可以重复回调   false 表示不可重复回调  默认值为false
-        
-        PDRPluginResult *result = [PDRPluginResult resultWithStatus:PDRCommandStatusOK messageAsArray: pResultString];
-        
-        // 如果Native代码运行结果和预期不同，需要通过回调通知JS层出现错误，并返回错误提示
-        //PDRPluginResult *result = [PDRPluginResult resultWithStatus:PDRCommandStatusError messageAsString:@"惨了! 出错了！ 咋(wu)整(liao)"];
-        
-        // 通知JS层Native层运行结果
-        [self toCallback:cbId withReslut:[result toJSONString]];
+        self.cbId = [commands.arguments objectAtIndex:0];
+        NSLog(@"cbid---%@",_cbId);
+
+        [self scanAction:nil];
     }
+}
+-(void)callbackToJs:(NSString *)barcodestring{
+    NSArray* pResultString = [NSArray arrayWithObjects:barcodestring, nil];
+    PDRPluginResult * result = [PDRPluginResult resultWithStatus:PDRCommandStatusOK messageAsArray:pResultString];
+    [self toCallback:self.cbId withReslut:[result toJSONString]];
+}
+/**
+ *  扫描事件
+ */
+- (void)scanAction:(UIButton *)sender{
+    ZFScanViewController * vc = [[ZFScanViewController alloc] init];
+    UINavigationController * navscan = [[UINavigationController alloc] initWithRootViewController:vc];
+    __block PGPluginBarScan * weakSelf = self;
+    vc.returnScanBarCodeValue = ^(NSString * barCodeString){
+        
+        NSLog(@"扫描结果的字符串======%@",barCodeString);
+
+        
+        [weakSelf callbackToJs:barCodeString];
+        
+    };
+    
+    [self presentViewController:navscan animated:YES completion:^{
+        
+    }];
 }
 
 

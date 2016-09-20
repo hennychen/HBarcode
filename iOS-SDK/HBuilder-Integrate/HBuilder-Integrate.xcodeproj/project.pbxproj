@@ -91,6 +91,14 @@
 		24BD5B041C994C3800B05AA2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BD5B031C994C3800B05AA2 /* libiconv.tbd */; };
 		24BD5B061C994C4000B05AA2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BD5B051C994C4000B05AA2 /* libsqlite3.0.tbd */; };
 		5C914ACC1D911E180093D98C /* PGPluginBarScan.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C914ACB1D911E180093D98C /* PGPluginBarScan.m */; };
+		5C914AFF1D9167E10093D98C /* QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C914AF41D9167E10093D98C /* QRCodeScanLine@2x.png */; };
+		5C914B001D9167E10093D98C /* ScanQR1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C914AF51D9167E10093D98C /* ScanQR1@2x.png */; };
+		5C914B011D9167E10093D98C /* ScanQR2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C914AF61D9167E10093D98C /* ScanQR2@2x.png */; };
+		5C914B021D9167E10093D98C /* ScanQR3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C914AF71D9167E10093D98C /* ScanQR3@2x.png */; };
+		5C914B031D9167E10093D98C /* ScanQR4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C914AF81D9167E10093D98C /* ScanQR4@2x.png */; };
+		5C914B041D9167E10093D98C /* ZFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C914AFA1D9167E10093D98C /* ZFConst.m */; };
+		5C914B051D9167E10093D98C /* ZFMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C914AFC1D9167E10093D98C /* ZFMaskView.m */; };
+		5C914B061D9167E10093D98C /* ZFScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C914AFE1D9167E10093D98C /* ZFScanViewController.m */; };
 		7ACF69AB19FF899A007C64F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */; };
 		7ACF69AD19FF89B1007C64F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF69AC19FF89B1007C64F1 /* Security.framework */; };
 		8E158BEF1A8D24A600845BB6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E158BEE1A8D24A600845BB6 /* AssetsLibrary.framework */; };
@@ -243,6 +251,17 @@
 		24BD5B051C994C4000B05AA2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		5C914ACA1D911E180093D98C /* PGPluginBarScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGPluginBarScan.h; path = "HBuilder-Integrate/PGPluginBarScan.h"; sourceTree = SOURCE_ROOT; };
 		5C914ACB1D911E180093D98C /* PGPluginBarScan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGPluginBarScan.m; path = "HBuilder-Integrate/PGPluginBarScan.m"; sourceTree = SOURCE_ROOT; };
+		5C914AF41D9167E10093D98C /* QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
+		5C914AF51D9167E10093D98C /* ScanQR1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR1@2x.png"; sourceTree = "<group>"; };
+		5C914AF61D9167E10093D98C /* ScanQR2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR2@2x.png"; sourceTree = "<group>"; };
+		5C914AF71D9167E10093D98C /* ScanQR3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR3@2x.png"; sourceTree = "<group>"; };
+		5C914AF81D9167E10093D98C /* ScanQR4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScanQR4@2x.png"; sourceTree = "<group>"; };
+		5C914AF91D9167E10093D98C /* ZFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFConst.h; sourceTree = "<group>"; };
+		5C914AFA1D9167E10093D98C /* ZFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFConst.m; sourceTree = "<group>"; };
+		5C914AFB1D9167E10093D98C /* ZFMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMaskView.h; sourceTree = "<group>"; };
+		5C914AFC1D9167E10093D98C /* ZFMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMaskView.m; sourceTree = "<group>"; };
+		5C914AFD1D9167E10093D98C /* ZFScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFScanViewController.h; sourceTree = "<group>"; };
+		5C914AFE1D9167E10093D98C /* ZFScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFScanViewController.m; sourceTree = "<group>"; };
 		7ACF69AA19FF899A007C64F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7ACF69AC19FF89B1007C64F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8E158BEE1A8D24A600845BB6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -442,6 +461,33 @@
 			name = Bundle;
 			sourceTree = "<group>";
 		};
+		5C914AF21D9167E10093D98C /* ZFScan */ = {
+			isa = PBXGroup;
+			children = (
+				5C914AF31D9167E10093D98C /* resource */,
+				5C914AF91D9167E10093D98C /* ZFConst.h */,
+				5C914AFA1D9167E10093D98C /* ZFConst.m */,
+				5C914AFB1D9167E10093D98C /* ZFMaskView.h */,
+				5C914AFC1D9167E10093D98C /* ZFMaskView.m */,
+				5C914AFD1D9167E10093D98C /* ZFScanViewController.h */,
+				5C914AFE1D9167E10093D98C /* ZFScanViewController.m */,
+			);
+			name = ZFScan;
+			path = "HBuilder-Integrate/ZFScan";
+			sourceTree = SOURCE_ROOT;
+		};
+		5C914AF31D9167E10093D98C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				5C914AF41D9167E10093D98C /* QRCodeScanLine@2x.png */,
+				5C914AF51D9167E10093D98C /* ScanQR1@2x.png */,
+				5C914AF61D9167E10093D98C /* ScanQR2@2x.png */,
+				5C914AF71D9167E10093D98C /* ScanQR3@2x.png */,
+				5C914AF81D9167E10093D98C /* ScanQR4@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		8EED628F198A1D13000A4449 = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +621,7 @@
 		8EED62A1198A1D13000A4449 /* HBuilder-Integrate */ = {
 			isa = PBXGroup;
 			children = (
+				5C914AF21D9167E10093D98C /* ZFScan */,
 				244737321D08364300D0F08F /* WebAppController.h */,
 				244737331D08364300D0F08F /* WebAppController.m */,
 				244737341D08364300D0F08F /* WebViewController.h */,
@@ -708,6 +755,7 @@
 				8E175F441A37B99E004A45F6 /* icon180.png in Resources */,
 				8EBB95FB1BAD6C7700D250D2 /* AlipaySDK.bundle in Resources */,
 				8E175F1B1A37B905004A45F6 /* Default@2x.png in Resources */,
+				5C914B031D9167E10093D98C /* ScanQR4@2x.png in Resources */,
 				8E175F3A1A37B99E004A45F6 /* icon58.png in Resources */,
 				8E2303A01B2AE8CF0050B03D /* WeiboSDK.bundle in Resources */,
 				8E175F421A37B99E004A45F6 /* icon144.png in Resources */,
@@ -718,11 +766,14 @@
 				8E175F361A37B99E004A45F6 /* icon29.png in Resources */,
 				8E175F181A37B905004A45F6 /* Default-736h@3x.png in Resources */,
 				8E23039F1B2AE8CF0050B03D /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				5C914AFF1D9167E10093D98C /* QRCodeScanLine@2x.png in Resources */,
 				8E175F5E1A37BE9C004A45F6 /* Main_iPad.storyboard in Resources */,
 				8EBB95FD1BAD6C7700D250D2 /* Pingpp.bundle in Resources */,
 				8E175F3C1A37B99E004A45F6 /* icon76.png in Resources */,
+				5C914B021D9167E10093D98C /* ScanQR3@2x.png in Resources */,
 				8E175F161A37B905004A45F6 /* Default-568h@2x.png in Resources */,
 				8E175F3D1A37B99E004A45F6 /* icon80.png in Resources */,
+				5C914B011D9167E10093D98C /* ScanQR2@2x.png in Resources */,
 				8E34834B1B564C0D00A40C55 /* AMap.bundle in Resources */,
 				8E175F3F1A37B99E004A45F6 /* icon100.png in Resources */,
 				8E175F371A37B99E004A45F6 /* icon40.png in Resources */,
@@ -732,6 +783,7 @@
 				8E175F4F1A37B9C5004A45F6 /* PandoraApi.bundle in Resources */,
 				8E175F401A37B99E004A45F6 /* icon114.png in Resources */,
 				8EBB95FC1BAD6C7700D250D2 /* BaiduWalletSDKBundle.bundle in Resources */,
+				5C914B001D9167E10093D98C /* ScanQR1@2x.png in Resources */,
 				8E175F431A37B99E004A45F6 /* icon152.png in Resources */,
 				8E175F391A37B99E004A45F6 /* icon57.png in Resources */,
 				8E175F381A37B99E004A45F6 /* icon50.png in Resources */,
@@ -749,10 +801,13 @@
 				5C914ACC1D911E180093D98C /* PGPluginBarScan.m in Sources */,
 				8E175F4D1A37B9C5004A45F6 /* AppDelegate.m in Sources */,
 				244737371D08364300D0F08F /* WebViewController.m in Sources */,
+				5C914B041D9167E10093D98C /* ZFConst.m in Sources */,
+				5C914B051D9167E10093D98C /* ZFMaskView.m in Sources */,
 				8E175F221A37B949004A45F6 /* main.m in Sources */,
 				8E23039C1B2AE6130050B03D /* PluginTest.m in Sources */,
 				244737361D08364300D0F08F /* WebAppController.m in Sources */,
 				8E175F501A37B9C5004A45F6 /* ViewController.m in Sources */,
+				5C914B061D9167E10093D98C /* ZFScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

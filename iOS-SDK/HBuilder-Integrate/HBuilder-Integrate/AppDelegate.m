@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PDRCore.h"
 #import "PDRCommonString.h"
+#import "WebViewController.h"
 
 @implementation AppDelegate
 
@@ -21,8 +22,10 @@
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.webcvt = [[WebViewController alloc] init];
+    
     UINavigationController* pNavCon = [[UINavigationController alloc]
-                                       initWithRootViewController:_window.rootViewController];
+                                       initWithRootViewController:self.webcvt];
     _window.rootViewController = pNavCon;
     
     [pNavCon release];
